@@ -1,4 +1,6 @@
 from app import app
+print("routes.py loaded")
+
 
 
 @app.route('/')
