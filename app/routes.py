@@ -7,12 +7,4 @@ print("routes.py loaded")
 @app.route('/index')
 def index():
     user = {'username':'Ashton'}
-    return f"""
-<html>
-    <head>
-        <title>Home Page - Microblog</title>
-    </head>
-    <body>
-        <h1>Hello, {user['username']}!</h1>
-    </body>
-</html>"""
+    return render_template('index.html', title='Home', user=user)
