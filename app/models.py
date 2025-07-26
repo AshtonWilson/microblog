@@ -1,6 +1,6 @@
 from typing import Optional
-import salachemy as sa 
-import sqalchemy.orm as so
+import sqlachemy as sa 
+import sqlalchemy.orm as so
 from app import db
 
 class User(db.Model):
